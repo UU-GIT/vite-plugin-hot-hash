@@ -2,7 +2,7 @@
     "name": "vite-plugin-hot-hash",
     "version": "1.0.0",
     "description": "生成filesinfo.json文件,可作为是否进行热更新的依据",
-    "main": "dist/index.is",
+    "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "exports": {
         "require": "./dist/index.js",
