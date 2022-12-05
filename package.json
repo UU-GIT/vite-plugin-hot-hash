@@ -1,0 +1,36 @@
+{
+    "name": "vite-plugin-hot-hash",
+    "version": "1.0.0",
+    "description": "生成filesinfo.json文件,可作为是否进行热更新的依据",
+    "main": "dist/index.is",
+    "types": "dist/index.d.ts",
+    "exports": {
+        "require": "./dist/index.js",
+        "import": "./dist/index.mjs",
+        "types": "./dist/index.d.ts"
+    },
+    "scripts": {
+        "dev": "tsup src/index.ts --watch --clean --dts --format esm,cjs",
+        "build": "tsup src/index.ts --clean --dts --format esm,cjs"
+    },
+    "files": [
+        "dist"
+    ],
+    "keywords": [
+        "vite",
+        "plugin",
+        "hot",
+        "hot-hash"
+    ],
+    "author": "zhangxiaoxiao",
+    "license": "MIT",
+    "dependencies": {
+        "crypto": "^1.0.1"
+    },
+    "devDependencies": {
+        "@types/node": "^18.11.10",
+        "tsup": "^6.5.0",
+        "typescript": "^4.9.3",
+        "vite": "^3.2.4"
+    }
+}
